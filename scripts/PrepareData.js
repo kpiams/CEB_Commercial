@@ -164,6 +164,8 @@ function prepareInterviewData() {
   for (i = 0; i < flight_list_full.length; i++) {
     let flight = flight_list_full[i];
 
+    if (flight.Flight == "5J229") flight.Flight = "DG6097"; 
+    if (flight.Flight == "5J433") flight.Flight = "DG6657"; 
     //airport_airline
     flight.quota_id = flight.AirlineCode + "-" + flight.Dest;//code for compare
 
